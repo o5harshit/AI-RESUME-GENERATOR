@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { useToast } from '@/hooks/use-toast';
 
 // Components
+import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import ResumeUpload from '@/components/ResumeUpload';
 import JobUrlInput from '@/components/JobUrlInput';
@@ -84,6 +85,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Navbar />
       <motion.div 
         className="max-w-7xl mx-auto px-4 py-10 sm:px-6 lg:px-8"
         variants={pageVariants}
